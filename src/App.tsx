@@ -1,13 +1,16 @@
 import React from 'react';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/homes';
 
 function App() {
   return (
     <div className="App">
-      teste
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 }
-  
 
 export default App;
