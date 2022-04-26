@@ -1,23 +1,32 @@
 import React, {
-  createContext, PropsWithChildren, ReactNode, useCallback, useEffect, useMemo, useState,
+  createContext, ReactNode, useCallback, useEffect, useMemo, useState,
 } from 'react';
 import getPokemons from '../services/getPokemons';
 
 export const PokemonContext = createContext({});
 
-export function PokemonProvider(props: PropsWithChildren<ReactNode>) {
-  const [data, setData] = useState([]);
+type UserContextProps = {
+  children: ReactNode;
+};
+
+export function PokemonProvider(props: UserContextProps) {
+  const [pokemonState, setPokemonState] = useState([]);
 
   const pokemons = useCallback(async () => {
-    const getAllPokemons = await getPokemons();
-    setData(getAllPokemons);
-  }, []);
+    const teste = await getPokemons();
+    console.log(teste);
+    setPokemonState(teste);
+  }, [setPokemonState]);
 
   useEffect(() => {
     pokemons();
   }, [pokemons]);
 
-  const context = useMemo(() => ({ data, setData }), [data, setData]);
+  const context = useMemo(
+    () => ({ pokemonState, setPokemonState }),
+    [pokemonState, setPokemonState],
+  );
+
   const { children } = props;
 
   return (

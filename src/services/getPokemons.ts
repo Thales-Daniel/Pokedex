@@ -2,9 +2,10 @@ import axios from 'axios';
 
 const getPokemons = async () => {
   try {
-    const url = '';
+    const url = 'https://pokeapi.co/api/v2/pokemon';
     const { data } = await axios.get(url);
-    return data.items;
+    console.log(data);
+    return data;
   } catch (err) {
     console.log(err);
     return err;
