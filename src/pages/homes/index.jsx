@@ -1,16 +1,10 @@
-import React, { useContext, useEffect } from 'react';
-import { PokemonContext } from '../../context/Provider';
+import React from 'react';
+import PokemonList from '../../components/pokemonList';
 
 function Home() {
-  const pokemonProvider = useContext(PokemonContext);
-
-  useEffect(() => {
-    const teste = pokemonProvider;
-    console.log(teste);
-  }, [pokemonProvider]);
   return (
     <div>
-      teste
+      <PokemonList />
     </div>
   );
 }

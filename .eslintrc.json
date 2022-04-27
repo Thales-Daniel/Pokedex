@@ -20,6 +20,14 @@
     "@typescript-eslint"
   ],
   "rules": {
+      "no-unused-vars": [
+        "error",
+        {
+          "vars": "all",
+          "args": "after-used",
+          "argsIgnorePattern": "^_"
+        }
+      ],
     "no-console": "off",
     "react/jsx-filename-extension": [
       2,
