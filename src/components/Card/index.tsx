@@ -34,11 +34,11 @@ function Card(props: { url: string }) {
           />
         </div>
         <div className="nameContainer">
-          <p className="titleName">Nome</p>
+          <p className="titleName">NAME</p>
           <span className="valueTittle">{pokemonDetails.name}</span>
         </div>
         <div className="typesContainer">
-          <p className="titleCard">Types</p>
+          <p className="titleCard">TYPE</p>
           <div>
             {pokemonDetails.types?.map(({ type }) => (
               <span className="typesValue" key={type.name}>
