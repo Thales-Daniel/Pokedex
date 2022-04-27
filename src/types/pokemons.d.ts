@@ -13,4 +13,6 @@ export interface PokemonsType {
 export interface PokemonsContextTypes {
   pokemons: PokemonsType,
   setPokemons?: (_data: PokemonsType) => void,
+  setPagina: (_pagina: number) => void,
+  pagina: number
 }

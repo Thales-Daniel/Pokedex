@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const getPokemons = async () => {
+const getPokemons = async (pagina: number) => {
   try {
-    const url = 'https://pokeapi.co/api/v2/pokemon?offset=0&limit=10"';
+    const url = `https://pokeapi.co/api/v2/pokemon?offset=${pagina}&limit=10`;
     const { data } = await axios.get(url);
     return data;
   } catch (err) {
