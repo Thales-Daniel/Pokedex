@@ -9,6 +9,7 @@
   width: 15em;
   height: 15%;
   flex-wrap: wrap;
+  border-radius: 10px;
 }
 
 .nameContainer {
@@ -21,7 +22,7 @@
 .titleName {
   display: flex;
   color: #76767A;
-  margin: 10px 0px 5px 5px;
+  margin: 5px 0px 5px 5px;
 }
 
 .titleCard {

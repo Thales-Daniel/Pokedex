@@ -29,7 +29,7 @@ function Card(props: { url: string }) {
       <div className="cardContainer">
         <div>
           <img
-            src={pokemonDetails.sprites.front_default}
+            src={pokemonDetails.sprites?.front_default}
             alt={`pokemon ${pokemonDetails.name} sprite`}
           />
         </div>
