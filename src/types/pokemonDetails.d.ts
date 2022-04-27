@@ -5,11 +5,17 @@ type pokemonType = {
     url: string,
   },
 }
+type sprit = {
+  front_default: string,
+  other: {
+    'official-artwork': {
+      front_default: string,
+    }
+  }
+}
 
 export type pokemonDetailsTypes = {
     name: string,
     types: pokemonType[],
-    sprites: {
-      front_default: string,
-    }
+    sprites: sprit,
 }

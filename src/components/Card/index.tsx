@@ -1,4 +1,7 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, {
+  useCallback, useEffect, useState,
+} from 'react';
+import { Link } from 'react-router-dom';
 import { getOnePokemon } from '../../services/getPokemons';
 import { pokemonDetailsTypes } from '../../types/pokemonDetails.d';
 import './style.css';
@@ -25,7 +28,7 @@ function Card(props: { url: string }) {
   }, [pokemonDetails]);
 
   return (
-    <div>
+    <Link to={`/${pokemonDetails.name}`} className="link">
       <div className="cardContainer">
         <div>
           <img
@@ -49,7 +52,7 @@ function Card(props: { url: string }) {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 

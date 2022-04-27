@@ -13,6 +13,7 @@ export const PokemonContext = createContext<PokemonsContextTypes>({} as Pokemons
 export function PokemonProvider(props: UserContextProps) {
   const [pokemons, setPokemons] = useState({});
   const [pagina, setPagina] = useState(0);
+  const [lastPoke, setLastPoke] = useState({});
 
   const getPoke = useCallback(async () => {
     const data = await getPokemons(pagina);
@@ -25,9 +26,9 @@ export function PokemonProvider(props: UserContextProps) {
 
   const context = useMemo(
     () => ({
-      pokemons, setPokemons, setPagina, pagina,
+      pokemons, setPokemons, setPagina, pagina, lastPoke, setLastPoke,
     }),
-    [pokemons, setPokemons],
+    [pokemons, setPokemons, setPagina, pagina, lastPoke, setLastPoke],
   );
 
   const { children } = props;
