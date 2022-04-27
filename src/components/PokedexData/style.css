@@ -1,0 +1,14 @@
+
+th {
+  color: #76767A;
+  padding: 5px;
+  border-top: solid #76767A 1px;
+  border-bottom: solid #76767A 1px;
+}
+
+td {
+  text-align: center;
+  color: white;
+  border: solid #76767A 1px;
+  padding: 15px;
+}
