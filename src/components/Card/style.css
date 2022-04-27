@@ -1,0 +1,47 @@
+.cardContainer {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #FAFAFA;
+  background-color: #21222D;
+  width: 15em;
+  height: 15%;
+  flex-wrap: wrap;
+}
+
+.nameContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.titleName {
+  display: flex;
+  color: #76767A;
+  margin: 10px 0px 5px 5px;
+}
+
+.titleCard {
+  color: #76767A;
+}
+
+.typesValue {
+  margin: 10px 0 5px 5px;
+  border: solid #FAFAFA 1px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.valueTittle {
+  margin-left: 5px;
+}
+
+.typesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

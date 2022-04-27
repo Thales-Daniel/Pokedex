@@ -1,0 +1,9 @@
+.containerList {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start  ;
+  align-items: flex-start;
+  width: 60%;
+  gap: 24px;
+}
