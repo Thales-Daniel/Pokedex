@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import PokedexData from '../../components/PokedexData';
 import { getPokemonByName } from '../../services/getPokemons';
 import { pokemonDetailsTypes } from '../../types/pokemonDetails.d';
+import './style.css';
 
 function details() {
   const { pathname } = useLocation();
@@ -26,9 +27,11 @@ function details() {
   }, [pokemon]);
 
   return (
-    <div className="details">
-      <img src={pokemon?.sprites?.other['official-artwork'].front_default} alt={pokemon.name} />
-      <PokedexData pokemonDetails={pokemon} />
+    <div className="detailsFather">
+      <div className="detailsContainer">
+        <img src={pokemon?.sprites?.other['official-artwork'].front_default} className="detailImage" alt={pokemon.name} />
+        <PokedexData pokemonDetails={pokemon} />
+      </div>
     </div>
   );
 }

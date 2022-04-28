@@ -1,6 +1,6 @@
 import React from 'react';
-import { propsPodemonType } from '../../types/pokemonDetails.d';
 import './style.css';
+import { propsPodemonType } from '../../types/pokemonDetails.d';
 
 function PokedexData(props: propsPodemonType) {
   const { pokemonDetails } = props;
@@ -10,7 +10,7 @@ function PokedexData(props: propsPodemonType) {
   return (
     <div>
       <h2>Pokedex Data</h2>
-      <table className="table">
+      <table>
         <tbody>
           <tr>
             <th>Order</th>
