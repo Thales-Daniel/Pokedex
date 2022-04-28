@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback } from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import PokedexData from '../../components/PokedexData';
 import { getPokemonByName } from '../../services/getPokemons';
 import { pokemonDetailsTypes } from '../../types/pokemonDetails.d';
@@ -31,6 +31,7 @@ function details() {
       <div className="detailsContainer">
         <img src={pokemon?.sprites?.other['official-artwork'].front_default} className="detailImage" alt={pokemon.name} />
         <PokedexData pokemonDetails={pokemon} />
+        <Link to="/" className="linkPokedex">Voltar</Link>
       </div>
     </div>
   );

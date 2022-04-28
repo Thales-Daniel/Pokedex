@@ -14,6 +14,22 @@ type sprit = {
   }
 }
 
+type abilities = {
+  is_hidden: boolean,
+  ability: {
+    name: string,
+    url: string,
+  }
+}
+
+type stats = {
+  base_stat: number,
+  efford: number,
+  stat: {
+    name: string
+  }
+}
+
 export type pokemonDetailsTypes = {
   name: string,
   types: pokemonType[],
@@ -23,6 +39,8 @@ export type pokemonDetailsTypes = {
   height?: number,
   weight?: number,
   order?: number,
+  abilities: abilities[]
+  stats?: stats[]
 }
 
 export type propsPodemonType = {

@@ -3,10 +3,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid #FAFAFA 1px;
   height: 100%;
   width: 100%;
   padding: 0;
+}
+
+.linkPokedex {
+  padding: 10px;
+  border-radius: 5px;
+  color: #FAFAFA;
+  background-color: #21222D;
+  border: solid #FAFAFA 1px;
+  text-decoration: none;
+  margin-top: 10px;
 }
 
 .detailsFather {
