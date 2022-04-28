@@ -8,32 +8,28 @@ function PokedexData(props: propsPodemonType) {
     base_experience: baseExperience, types, height, weight, order,
   } = pokemonDetails;
   return (
-    <div>
+    <div className="pokedexDataContainer">
       <h2>Pokedex Data</h2>
-      <table>
-        <tbody>
-          <tr>
-            <th>Order</th>
-            <td>{order}</td>
-          </tr>
-          <tr>
-            <th>Type</th>
-            {types?.map(({ type }) => <td key={type.name}>{type.name}</td>)}
-          </tr>
-          <tr>
-            <th>Base Experience</th>
-            <td>{baseExperience}</td>
-          </tr>
-          <tr>
-            <th>Height</th>
-            <td>{height}</td>
-          </tr>
-          <tr>
-            <th>Weight</th>
-            <td>{weight}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="spanFather">
+        <p>Order</p>
+        <span>{order}</span>
+      </div>
+      <div className="spanFather">
+        <p>Type</p>
+        {types?.map(({ type }) => <span key={type.name}>{type.name}</span>)}
+      </div>
+      <div className="spanFather">
+        <p>Base Experience</p>
+        <span>{baseExperience}</span>
+      </div>
+      <div className="spanFather">
+        <p>Height</p>
+        <span>{height}</span>
+      </div>
+      <div className="spanFather">
+        <p>Weight</p>
+        <span>{weight}</span>
+      </div>
     </div>
   );
 }

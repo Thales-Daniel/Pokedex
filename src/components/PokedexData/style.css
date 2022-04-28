@@ -1,7 +1,8 @@
-.dataContainer {
+.pokedexDataContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 /* th {
@@ -24,4 +25,16 @@ td {
 
 .detailsName {
   color: #FAFAFA;
+}
+
+.spanFather > span {
+  padding: 10px;
+  color: #76767A;
+}
+
+.spanFather {
+  color: #FAFAFA;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }

@@ -1,0 +1,16 @@
+
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  color: #FAFAFA;
+  background-color: #21222D;
+  width: 100vw;
+  height: 5vh;
+}
+
+.headerUltraball {
+ width: 5vh;
+ margin-left: 20px;
+}
