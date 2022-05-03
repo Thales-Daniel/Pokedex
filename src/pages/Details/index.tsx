@@ -22,10 +22,6 @@ function details() {
     getPoke();
   }, []);
 
-  useEffect(() => {
-    console.log(pokemon);
-  }, [pokemon]);
-
   return (
     <div className="detailsFather">
       <div className="detailsContainer">

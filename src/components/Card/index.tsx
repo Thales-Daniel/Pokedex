@@ -21,11 +21,7 @@ function Card(props: { url: string }) {
 
   useEffect(() => {
     pokemon();
-  }, [pokemon]);
-
-  useEffect(() => {
-    console.log(pokemonDetails);
-  }, [pokemonDetails]);
+  }, []);
 
   return (
     <Link to={`/${pokemonDetails.name}`} className="link">
