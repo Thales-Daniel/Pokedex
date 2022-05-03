@@ -5,6 +5,7 @@ import './style.css';
 
 function PokemonList() {
   const { pokemons } = useContext(PokemonContext);
+
   useEffect(() => {
     console.log(pokemons);
   }, [pokemons]);
